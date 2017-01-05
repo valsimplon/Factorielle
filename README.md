@@ -1,6 +1,5 @@
 
-https://travis-ci.org/valsimplon/Factorielle
-
+[![Build Status](https://travis-ci.org/valsimplon/Factorielle.svg?branch=FactorielleValerie)](https://travis-ci.org/valsimplon/Factorielle)
 
 # Factorielle
 
