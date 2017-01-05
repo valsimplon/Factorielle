@@ -1,5 +1,7 @@
 package co.simplon.factorielle;
 
+import java.lang.Math;
+
 /**
  * Factorielle
  */
@@ -14,10 +16,17 @@ public class Factorielle
     			return n * calculer(n-1);
     		} else if (n < 0) {
     			throw new IllegalArgumentException();
-    		} else if (n == 0) {
-    			return 1;
-    		}
-    		return n;
-    }
-
+    		} 
+    		return 1;
+    } 
+    
+/*	public long calculer (long n) {
+		if (n > 1) {
+			return n * calculer(n-1);
+		} else if (n < 0) {
+			return calculer(Math.abs(n));
+		}
+		return 1;	
+	}
+*/
 }

@@ -33,6 +33,15 @@ public class FactorielleTest {
 
 	}
 	
+/*	@Test
+	public void testCalculerAvecValeurNegative() {
+		
+		Factorielle factorielle = new Factorielle();
+		
+		assertEquals(1, factorielle.calculer(-1));
+
+	}*/
+	
 	@Test
 	public void testCalculerAvecValeur10() {
 		
