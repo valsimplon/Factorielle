@@ -14,6 +14,8 @@ public class Factorielle
     			return n * calculer(n-1);
     		} else if (n < 0) {
     			throw new IllegalArgumentException();
+    		} else if (n == 0) {
+    			return 1;
     		}
     		return n;
     }
