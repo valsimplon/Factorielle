@@ -7,8 +7,12 @@ import org.junit.Test;
 public class FactorielleTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void testCalculerAvecValeur1() {
+		
+		Factorielle factorielle = new Factorielle();
+		long resultat = factorielle.calculer(1);
+		assertEquals(1, resultat);
+		
 	}
 
 }
