@@ -32,4 +32,22 @@ public class FactorielleTest {
 		assertEquals(1, factorielle.calculer(0));
 
 	}
+	
+	@Test
+	public void testCalculerAvecValeur10() {
+		
+		Factorielle factorielle = new Factorielle();
+		
+		assertEquals(3628800, factorielle.calculer(10));
+
+	}
+	
+	@Test
+	public void testCalculerAvecValeur15() {
+		
+		Factorielle factorielle = new Factorielle();
+		
+		assertEquals(1307674368000l, factorielle.calculer(15));
+
+	}
 }
