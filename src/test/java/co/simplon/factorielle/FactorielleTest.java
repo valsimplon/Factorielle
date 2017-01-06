@@ -68,6 +68,14 @@ public class FactorielleTest {
 		assertEquals(1307674368000l, factorielle.calculer(15));
 
 	}
+	
+	@Test(timeout=1)
+	public void testCalculerAvecValeur18() {
+
+		for (int i = 0; i<=99; i++)
+			assertEquals(6402373705728000l, factorielle.calculer(18));
+
+	}
 
 	@Ignore
 	@Test
