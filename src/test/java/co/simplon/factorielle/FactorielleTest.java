@@ -61,15 +61,16 @@ public class FactorielleTest {
 		assertEquals(1307674368000l, factorielle.calculer(15));
 
 	}
-	
-	@Ignore	
+
 	@Test
 	public void testCalculerAvecValeur16() {
 		
-		assertEquals(1307674368000l, factorielle.calculer(16));
+		assertEquals("erreur introduite volontairement", 1307674368000l, factorielle.calculer(16));
 
 	}
 
+	
+	@Ignore
 	@Test
 	public void testCalculerAvecValeur16Boolean() {
 		
