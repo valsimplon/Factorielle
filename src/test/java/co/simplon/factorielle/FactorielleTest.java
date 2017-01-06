@@ -62,6 +62,7 @@ public class FactorielleTest {
 
 	}
 
+	@Ignore
 	@Test
 	public void testCalculerAvecValeur16() {
 		
