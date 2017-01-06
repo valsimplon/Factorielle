@@ -38,6 +38,13 @@ public class FactorielleTest {
 		assertEquals("cas particulier", 1, factorielle.calculer(0));
 
 	}
+
+	@Test(expected = IllegalArgumentException.class)
+	public void testCalculerAvecValeurNegative() {
+				
+		assertEquals("cas particulier à -1", 1, factorielle.calculer(-1));
+
+	}
 	
 /*	@Test
 	public void testCalculerAvecValeurNegative() {
