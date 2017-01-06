@@ -33,7 +33,6 @@ public class FactorielleTest {
 	
 	@Test
 	public void testCalculerAvecValeurNulle() {
-
 		
 		assertEquals("cas particulier", 1, factorielle.calculer(0));
 
@@ -84,13 +83,14 @@ public class FactorielleTest {
 		assertEquals("erreur introduite volontairement", 1307674368000l, factorielle.calculer(16));
 
 	}
-
 	
 	@Ignore
 	@Test
 	public void testCalculerAvecValeur16Boolean() {
 		
-		assertTrue(1307674368000l == factorielle.calculer(16));
-
+		//assertTrue(1307674368000l == factorielle.calculer(16));
+		if (1307674368000l != factorielle.calculer(16)) {
+			fail("ERREUR");
+		}
 	}
 }
