@@ -4,13 +4,13 @@ import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import static org.hamcrest.core.Is.is;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 
-import static org.hamcrest.CoreMatchers.equalTo;
-
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.fail;
 
@@ -36,6 +36,7 @@ public class FactorielleTest {
 	public void testCalculerAvecValeur5() {
 		
 		assertTrue(120 == factorielle.calculer(5));
+		assertFalse(120 != factorielle.calculer(5));
 
 	}
 	
@@ -114,6 +115,7 @@ public class FactorielleTest {
 		//THEN
 		assertThat(resultat, equalTo(resultatAttendu));
 		//assertThat(resultat == resultatAttendu, Is.is(true));
+		//assertThat(resultat == resultatAttendu, is(true));
 		assertThat(resultat == resultatAttendu, is(true));
 	}
 }
