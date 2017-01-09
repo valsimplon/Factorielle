@@ -1,14 +1,18 @@
 package co.simplon.factorielle;
 
-import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.core.IsEqual.equalTo;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.fail;
-
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+
+import static org.hamcrest.core.Is.is;
+
+import static org.hamcrest.MatcherAssert.assertThat;
+
+import static org.hamcrest.CoreMatchers.equalTo;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 public class FactorielleTest {
 	
@@ -109,6 +113,7 @@ public class FactorielleTest {
 		
 		//THEN
 		assertThat(resultat, equalTo(resultatAttendu));
-		
+		//assertThat(resultat == resultatAttendu, Is.is(true));
+		assertThat(resultat == resultatAttendu, is(true));
 	}
 }
