@@ -1,6 +1,10 @@
 package co.simplon.factorielle;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.core.IsEqual.equalTo;
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.fail;
 
 import org.junit.Before;
 import org.junit.Ignore;
@@ -92,5 +96,19 @@ public class FactorielleTest {
 		if (1307674368000l != factorielle.calculer(16)) {
 			fail("ERREUR");
 		}
+	}
+	
+	@Test
+	public void factorielle_4_doit_etre_24_avec_hamcrest() {
+		//GIVEN
+		long entier = 4;
+		long resultatAttendu = 24;
+		
+		//WHEN
+		long resultat = factorielle.calculer(entier);
+		
+		//THEN
+		assertThat(resultat, equalTo(resultatAttendu));
+		
 	}
 }
